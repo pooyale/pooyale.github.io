@@ -264,4 +264,42 @@ footer {
         width: 100%;
         text-align: center;
     }
+}
+
+/* Contact Section */
+.contact {
+    background: #f9f9f9;
+    padding: 100px 0;
+}
+
+.contact-content {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+.contact button {
+    margin-top: 1rem;
 } 
