@@ -145,9 +145,14 @@ body {
 }
 
 .secondary {
-    background: transparent;
+    background: rgba(255, 255, 255, 0.85);
     border: 2px solid white;
-    color: white;
+    color: #333;
+}
+
+.secondary:hover {
+    background: #fff;
+    color: #0984e3;
 }
 
 /* Sections */
