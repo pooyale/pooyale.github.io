@@ -186,11 +186,9 @@ section {
 /* About Section */
 .about {
     background: rgba(255,255,255,0.97);
-    border-radius: 20px;
     box-shadow: 0 2px 16px rgba(0,0,0,0.04);
-    margin: 40px auto;
     padding: 60px 0;
-    max-width: 1200px;
+    width: 100%;
 }
 
 .about-content {
@@ -256,11 +254,9 @@ section {
 /* Work Section */
 .work {
     background: rgba(255,255,255,0.97);
-    border-radius: 20px;
     box-shadow: 0 2px 16px rgba(0,0,0,0.04);
-    margin: 40px auto;
     padding: 60px 0;
-    max-width: 1200px;
+    width: 100%;
 }
 
 .work-description {
