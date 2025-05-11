@@ -189,6 +189,7 @@ section {
     box-shadow: 0 2px 16px rgba(0,0,0,0.04);
     padding: 60px 0;
     width: 100%;
+    min-height: 100vh;
 }
 
 .about-content {
@@ -257,6 +258,7 @@ section {
     box-shadow: 0 2px 16px rgba(0,0,0,0.04);
     padding: 60px 0;
     width: 100%;
+    min-height: 100vh;
 }
 
 .work-description {
