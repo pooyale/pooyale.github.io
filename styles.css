@@ -216,7 +216,32 @@ section {
     padding: 20px;
 }
 
-.resume h3 {
+.resume-header {
+    text-align: center;
+    margin-bottom: 40px;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.resume-header h1 {
+    color: #2c3e50;
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.resume-header .location {
+    color: #3498db;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.resume-section {
+    margin-bottom: 40px;
+}
+
+.resume-section h3 {
     color: #2c3e50;
     margin-bottom: 20px;
     font-size: 1.5rem;
@@ -224,17 +249,22 @@ section {
     padding-bottom: 10px;
 }
 
-.experience-item, .education-item {
-    margin-bottom: 30px;
-    padding: 20px;
+.resume-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.resume-card {
     background: white;
+    padding: 25px;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
-.experience-item h4, .education-item h4 {
+.resume-card h4 {
     color: #2c3e50;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
     font-size: 1.2rem;
 }
 
@@ -250,16 +280,32 @@ section {
     margin-bottom: 10px;
 }
 
-.experience-item ul {
+.resume-card ul {
     list-style-type: disc;
     margin-left: 20px;
     margin-top: 10px;
 }
 
-.experience-item li {
+.resume-card li {
     margin-bottom: 5px;
     color: #34495e;
     line-height: 1.5;
+}
+
+.skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.skills-list span {
+    display: inline-block;
+    background: #e8f4fc;
+    color: #2c3e50;
+    padding: 5px 15px;
+    border-radius: 15px;
+    font-size: 0.9rem;
 }
 
 .skills-languages {
@@ -469,8 +515,12 @@ footer {
         grid-template-columns: 1fr;
     }
     
-    .experience-item, .education-item {
-        padding: 15px;
+    .resume-card {
+        padding: 20px;
+    }
+    
+    .resume-header h1 {
+        font-size: 2rem;
     }
 }
 
@@ -532,26 +582,4 @@ footer {
 .spacer {
     background: transparent;
     min-height: 40vh;
-}
-
-/* Resume Header */
-.resume-header {
-    text-align: center;
-    margin-bottom: 40px;
-    padding: 20px;
-    background: white;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-}
-
-.resume-header h1 {
-    color: #2c3e50;
-    font-size: 2.5rem;
-    margin-bottom: 10px;
-}
-
-.resume-header .location {
-    color: #3498db;
-    font-size: 1.2rem;
-    font-weight: 500;
 } 
