@@ -216,11 +216,31 @@ section {
 .project-card {
     display: flex;
     background: #f7f7f7;
-    border-radius: 20px;
     box-shadow: 0 2px 10px rgba(0,0,0,0.05);
     padding: 2rem;
     align-items: center;
     gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.project-image {
+    flex-shrink: 0;
+}
+
+.project-icons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.2rem;
+    font-size: 1.7rem;
+    margin: 0 1.2rem;
+}
+.project-icons a {
+    color: #222;
+    transition: color 0.2s;
+}
+.project-icons a:hover {
+    color: #0984e3;
 }
 
 .project-image img {
@@ -371,6 +391,11 @@ footer {
         width: 100%;
         height: auto;
         margin-bottom: 1rem;
+    }
+    .project-icons {
+        flex-direction: row;
+        margin: 1rem 0;
+        gap: 2rem;
     }
 }
 
