@@ -14,6 +14,7 @@ body {
     line-height: 1.6;
     color: #333;
     overflow-x: hidden;
+    position: relative;
 }
 
 .container {
@@ -68,32 +69,47 @@ body {
 
 /* Hero Section */
 .hero {
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    background: url('pictures/background.webp') center center/cover no-repeat;
-    position: relative;
     color: #fff;
     text-align: center;
     padding: 0 20px;
+    background: none;
     overflow: hidden;
 }
 
-.hero::before {
-    content: '';
-    position: absolute;
-    top: 0; left: 0; right: 0; bottom: 0;
-    background: rgba(30, 41, 59, 0.7); /* increased opacity */
-    z-index: 1;
-}
-
 .hero-bg-video {
-    position: absolute;
-    top: 0; left: 0; width: 100%; height: 100%;
+    position: fixed;
+    top: 0; left: 0; width: 100vw; height: 100vh;
     object-fit: cover;
     z-index: 0;
     pointer-events: none;
+}
+
+.hero-overlay {
+    position: fixed;
+    top: 0; left: 0; width: 100vw; height: 100vh;
+    background: rgba(30, 41, 59, 0.7);
+    z-index: 1;
+    pointer-events: none;
+}
+
+section, .navbar, footer {
+    position: relative;
+    z-index: 2;
+}
+
+/* Section reveal/fade-in effect */
+[data-section] {
+    opacity: 0;
+    transform: translateY(60px);
+    transition: opacity 0.8s cubic-bezier(.4,0,.2,1), transform 0.8s cubic-bezier(.4,0,.2,1);
+}
+[data-section].visible {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 .hero-content {

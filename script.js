@@ -53,4 +53,23 @@ window.addEventListener('scroll', () => {
             link.classList.add('active');
         }
     });
+});
+
+// Section reveal on scroll (slideshow effect)
+function revealSectionsOnScroll() {
+    const sections = document.querySelectorAll('[data-section]');
+    const windowHeight = window.innerHeight;
+    sections.forEach(section => {
+        const rect = section.getBoundingClientRect();
+        if (rect.top < windowHeight * 0.8) {
+            section.classList.add('visible');
+        } else {
+            section.classList.remove('visible');
+        }
+    });
+}
+window.addEventListener('scroll', revealSectionsOnScroll);
+window.addEventListener('resize', revealSectionsOnScroll);
+document.addEventListener('DOMContentLoaded', () => {
+    revealSectionsOnScroll();
 }); 

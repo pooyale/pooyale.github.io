@@ -9,6 +9,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
+    <video class="hero-bg-video" autoplay loop muted playsinline>
+        <source src="pictures/wavylines.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    <div class="hero-overlay"></div>
     <nav class="navbar">
         <div class="nav-content">
             <div class="logo">Pooya Alehossein</div>
@@ -21,18 +26,14 @@
         </div>
     </nav>
 
-    <section id="home" class="hero">
-        <video class="hero-bg-video" autoplay loop muted playsinline>
-            <source src="pictures/wavylines.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
+    <section id="home" class="hero" data-section="hero">
         <div class="hero-content">
             <h1>Hey! I'm Pooya.</h1>
             <h2>Game Developer & Computer Science Student</h2>
         </div>
     </section>
 
-    <section id="about" class="about">
+    <section id="about" class="about" data-section="about">
         <div class="container">
             <h2 class="section-title">About Me</h2>
             <div class="about-content">
@@ -46,7 +47,7 @@
         </div>
     </section>
 
-    <section id="work" class="work">
+    <section id="work" class="work" data-section="work">
         <div class="container">
             <h2 class="section-title" style="font-size:3rem; margin-bottom:1rem;">Projects</h2>
             <p class="projects-subtitle" style="font-size:2rem; text-align:center; margin-bottom:3rem; font-weight:400;">I'm working on contributing to open-source, but these are the first two projects I did.</p>
@@ -75,7 +76,7 @@
         </div>
     </section>
 
-    <section id="contact" class="contact">
+    <section id="contact" class="contact" data-section="contact">
         <div class="container">
             <h2 class="section-title">Contact Me</h2>
             <div class="contact-content">
