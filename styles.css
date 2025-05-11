@@ -195,8 +195,25 @@ section {
 }
 
 .about-content {
-    max-width: 800px;
-    margin: 0 auto;
+    display: flex;
+    align-items: flex-start;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.about-image {
+    flex: 0 0 300px;
+}
+
+.about-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.about-text {
+    flex: 1;
 }
 
 .about-text p {
@@ -521,6 +538,17 @@ footer {
     
     .resume-header h1 {
         font-size: 2rem;
+    }
+    
+    .about-content {
+        flex-direction: column;
+    }
+    
+    .about-image {
+        flex: 0 0 auto;
+        width: 100%;
+        max-width: 300px;
+        margin: 0 auto 2rem;
     }
 }
 
